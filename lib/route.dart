@@ -6,9 +6,9 @@ import 'view/main/splash_screen.dart';
 
 final Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
  '/': (BuildContext context) => const SplashScreen(),
-// '/mydata': (BuildContext context) => MyDataScreen(),
+ '/mydata': (BuildContext context) => const MyDataScreen(),
 '/welcome' : (BuildContext context) => const WelcomeScreen(),
-'/game/vieja':(BuildContext context) =>  TwoPlayerGame()
+'/game/vieja':(BuildContext context) => const TwoPlayerGame()
 
 
 

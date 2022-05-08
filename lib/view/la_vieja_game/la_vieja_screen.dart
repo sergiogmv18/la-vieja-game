@@ -10,6 +10,7 @@ enum GameState {
 
 
 class TwoPlayerGame extends StatefulWidget {
+  const TwoPlayerGame({Key? key}) : super(key: key);
   @override
   _TwoPlayerGameState createState() => _TwoPlayerGameState();
 }
