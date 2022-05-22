@@ -1,6 +1,7 @@
 import 'dart:math';
+import 'package:PlayGame/style.dart';
 import 'package:flutter/material.dart';
-import 'package:la_vieja/style.dart';
+
 
 enum GameState {
   Blank,

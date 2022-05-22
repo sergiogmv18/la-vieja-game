@@ -1,7 +1,7 @@
 // dao/person_dao.dart
 
+import 'package:PlayGame/models/models_base.dart';
 import 'package:floor/floor.dart';
-import 'package:la_vieja/models/models_base.dart';
 
 abstract class ReposiroryBaseDao<Model extends ModelBase> {
   @insert

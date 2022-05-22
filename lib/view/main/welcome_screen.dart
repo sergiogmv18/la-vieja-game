@@ -1,9 +1,9 @@
-import 'dart:async';
+
+import 'package:PlayGame/component/button.dart';
+import 'package:PlayGame/controller/translation_controller.dart';
+import 'package:PlayGame/controller/user_controller.dart';
+import 'package:PlayGame/models/user_models.dart';
 import 'package:flutter/material.dart';
-import 'package:la_vieja/component/button.dart';
-import 'package:la_vieja/controller/translation_controller.dart';
-import 'package:la_vieja/controller/user_controller.dart';
-import 'package:la_vieja/models/user_models.dart';
 
 
 class WelcomeScreen extends StatefulWidget {
@@ -82,7 +82,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 },
               ),
             ),
-            const SizedBox(height: 20,),
+            const SizedBox(height: 20),
             buttonComponent(
               context,
               onPressed: ()async{
@@ -90,7 +90,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 userApp.setFirtName(firtName);
                 userApp.setLastName(lastName);
                 await UserController().saveLocalUser(userApp);
-                Navigator.of(context).pushNamedAndRemoveUntil('/game/vieja', (route) => false,);
+                Navigator.of(context).pushNamedAndRemoveUntil('/mydata', (route) => false);
               },
               child: Text(translate('go')
               ),

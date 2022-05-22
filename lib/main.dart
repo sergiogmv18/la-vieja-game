@@ -1,5 +1,5 @@
+import 'package:PlayGame/helpers/service_locator.dart';
 import 'package:flutter/material.dart';
-import 'package:la_vieja/helpers/service_locator.dart';
 import 'package:provider/provider.dart';
 import 'controller/navigation_service_controller.dart';
 import 'controller/translation_controller.dart';
@@ -15,12 +15,13 @@ void main() async{
         value: TranslationController.getInstance(),
       ),
     ],
-    child: PlayGame(),
+    child: const PlayGame(),
   ));
 }
 
 class PlayGame extends StatelessWidget {
   const PlayGame({Key? key}) : super(key: key);
+
 
   // This widget is the root of your application.
   @override

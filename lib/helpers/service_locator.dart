@@ -1,7 +1,7 @@
+import 'package:PlayGame/database/play_game_database.dart';
+import 'package:PlayGame/models/user_models.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:get_it/get_it.dart';
-import 'package:la_vieja/database/play_game_database.dart';
-import 'package:la_vieja/models/user_models.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'session.dart';
 
@@ -16,7 +16,7 @@ GetIt serviceLocator = GetIt.instance;
 Future setupLocator() async {
   final prefs = await SharedPreferences.getInstance();
   if (prefs.getBool('first_run') ?? true) {
-    FlutterSecureStorage storage = FlutterSecureStorage();
+    FlutterSecureStorage storage = const FlutterSecureStorage();
     await storage.deleteAll();
     prefs.setBool('first_run', false);
   }

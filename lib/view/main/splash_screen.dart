@@ -1,7 +1,7 @@
 import 'dart:async';
+import 'package:PlayGame/helpers/service_locator.dart';
+import 'package:PlayGame/helpers/session.dart';
 import 'package:flutter/material.dart';
-import 'package:la_vieja/helpers/service_locator.dart';
-import 'package:la_vieja/helpers/session.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 

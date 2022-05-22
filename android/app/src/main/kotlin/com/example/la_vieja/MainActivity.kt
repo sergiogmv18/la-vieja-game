@@ -1,4 +1,4 @@
-package com.example.la_vieja
+package com.sergio.playGame
 
 import io.flutter.embedding.android.FlutterActivity
 
